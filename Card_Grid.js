@@ -69,8 +69,7 @@ function Creat_card(card_bgd_id,card_item_class,set_card,move) {
             status.onclick=1;
             status.node.style.left=mouse.x-set_card.w/2+"px";
             status.node.style.top=mouse.y-set_card.h/2+"px";//这里不需要调用，因为已经有set对象可用
-            //status.node.style.left=mouse.x-set_card.card_w/2+"px";
-            //status.node.style.top=mouse.y-set_card.card_h/2+"px";
+
             status.node.style['z-index']="999";//将卡片放在最前面
             move.fresh_blank_index(mouse);
             //console.log(set_card.card_w);
